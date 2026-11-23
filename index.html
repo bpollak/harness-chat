@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TritonAI Harness Chat: your TritonAI assistant, in your pocket</title>
+<meta name="description" content="An iPhone app for UC San Diego staff. Ask from your phone, and the TritonAI Harness on your own Mac or PC does the work and shows you the answer.">
+<meta property="og:title" content="TritonAI Harness Chat">
+<meta property="og:description" content="Ask from your phone. The assistant on your own computer does the work.">
+<meta property="og:image" content="assets/icon-512.png">
+<meta name="theme-color" content="#0b2a4a">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <a class="brand" href="#top"><img src="assets/icon-512.png" alt="" width="36" height="36"><span>TritonAI Harness Chat</span></a>
+  <nav aria-label="Sections">
+    <a href="#ask">What to ask</a>
+    <a href="#assistant">Your assistant</a>
+    <a href="#setup">Setup</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">For iPhone · UC San Diego staff</p>
+      <h1>Your TritonAI assistant, in your pocket.</h1>
+      <p class="lede">Ask from your phone, in your own words. The TritonAI Harness on your own Mac or PC does the work, and the answer shows up in one friendly, running chat.</p>
+      <div class="cta">
+        <span class="store" role="img" aria-label="Coming soon to the App Store">
+          <span><small>Coming soon to the</small>App Store</span>
+        </span>
+        <a class="btn ghost" href="https://tritonai.ucsd.edu/developer-apis/harness-phone-app.html">Setup and support</a>
+      </div>
+      <p class="fine">Free. Requires iOS 18 or later and TritonAI Harness on your Mac or PC.</p>
+    </div>
+
+    <div class="phone-stage">
+      <div class="phone" aria-label="A sample conversation you can try">
+        <div class="phone-top">
+          <div class="mascot sm" data-clip="ready" id="demoMascot"></div>
+          <div class="who"><span>TritonAI</span><strong id="demoStatus" aria-live="polite">Ready when you are</strong></div>
+        </div>
+        <div class="chat" id="demoChat">
+          <p class="hint" id="demoHint">Tap a request below to see how it works.</p>
+        </div>
+        <div class="chips" id="demoChips">
+          <button type="button" data-demo="trip">How do I get reimbursed for a conference trip?</button>
+          <button type="button" data-demo="agenda">Help me outline a meeting agenda</button>
+          <button type="button" data-demo="email">Draft a reminder that timesheets are due Friday</button>
+        </div>
+        <div class="composer" aria-hidden="true"><span>+</span><em>Ask anything</em><b>↑</b></div>
+      </div>
+      <p class="fine center">Try it. These are sample answers.</p>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c160 40 320 40 480 10s320-50 480-20 320 60 480 20v40H0z"/></svg>
+</section>
+
+<section class="facts">
+  <div class="wrap fact-row">
+    <div><strong>One running chat</strong><span>no projects, threads or models to pick</span></div>
+    <div><strong>Your own computer</strong><span>does the work, so your files stay with you</span></div>
+    <div><strong>Asks before it acts</strong><span>and writes drafts for you to send</span></div>
+    <div><strong>Two-minute setup</strong><span>scan one code and you are connected</span></div>
+  </div>
+</section>
+
+<section class="band" id="ask">
+  <div class="wrap">
+    <h2>Ask the way you would ask a colleague.</h2>
+    <p class="sub">No special wording. Type it or say it, and add a photo or a document if that helps.</p>
+    <div class="cards">
+      <article><span class="emoji" aria-hidden="true">🧭</span><h3>How things are done here</h3><p>"How do I get reimbursed for a conference trip?" You get the steps and a link to the campus source.</p></article>
+      <article><span class="emoji" aria-hidden="true">✍️</span><h3>A first draft</h3><p>An email, an agenda or a summary to review. Nothing is sent until you send it yourself.</p></article>
+      <article><span class="emoji" aria-hidden="true">📅</span><h3>Your own day</h3><p>"What is on my calendar tomorrow?" Works with the mail, calendar and files you have set up in TritonAI Harness.</p></article>
+      <article><span class="emoji" aria-hidden="true">📎</span><h3>Something you have in hand</h3><p>Attach a photo or a document and ask about it. Files the assistant saves on your computer open right on your phone.</p></article>
+      <article><span class="emoji" aria-hidden="true">⏰</span><h3>On a schedule</h3><p>Have a request run every day, on weekdays or once a week. The answer is waiting in your chat.</p></article>
+      <article><span class="emoji" aria-hidden="true">💡</span><h3>Not sure what to ask?</h3><p>The Ideas tab suggests ready-to-send requests. Tap one, change it if you like, and send.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band sea" id="assistant">
+  <div class="wrap">
+    <h2>He shows you what he is up to.</h2>
+    <p class="sub">Your assistant lives at the top of the chat. One glance tells you whether he is ready, busy or finished. Tap him while he works to see each step. You can even give him a name.</p>
+    <div class="moods">
+      <figure><div class="mascot" data-clip="wave"></div><figcaption><strong>Hello</strong>Greets you when you open the app</figcaption></figure>
+      <figure><div class="mascot" data-clip="ready"></div><figcaption><strong>Ready when you are</strong>Waiting for your next request</figcaption></figure>
+      <figure><div class="mascot" data-clip="working"></div><figcaption><strong>Looking it up</strong>Searching and reading for you</figcaption></figure>
+      <figure><div class="mascot" data-clip="making"></div><figcaption><strong>Writing it up</strong>Putting your answer together</figcaption></figure>
+      <figure><div class="mascot" data-clip="celebrate"></div><figcaption><strong>Done</strong>Your answer is in the chat</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="tour">
+  <div class="wrap">
+    <h2>A quick look around.</h2>
+    <p class="sub">Four tabs, and you may only ever need the first one.</p>
+  </div>
+  <div class="shots" tabindex="0" aria-label="Screenshots of the app. Scroll sideways for more.">
+    <figure><img src="assets/shot-chat.jpg" width="540" height="1174" loading="lazy" alt="The chat, with the assistant at the top and an agenda he wrote"><figcaption><strong>Chat</strong>Everything in one conversation</figcaption></figure>
+    <figure><img src="assets/shot-asks-first.jpg" width="540" height="1174" loading="lazy" alt="The assistant asking for an OK before opening a web page"><figcaption><strong>He asks first</strong>You say yes or no</figcaption></figure>
+    <figure><img src="assets/shot-answer-with-source.jpg" width="540" height="1174" loading="lazy" alt="An answer with numbered steps and a link to its source"><figcaption><strong>Answers with sources</strong>So you can check them</figcaption></figure>
+    <figure><img src="assets/shot-ideas.jpg" width="540" height="1174" loading="lazy" alt="The Ideas tab with suggested requests"><figcaption><strong>Ideas</strong>Suggestions to get you started</figcaption></figure>
+    <figure><img src="assets/shot-scheduled.jpg" width="540" height="1174" loading="lazy" alt="The Scheduled tab with a daily calendar request"><figcaption><strong>Scheduled</strong>Requests that run on their own</figcaption></figure>
+    <figure><img src="assets/shot-library.jpg" width="540" height="1174" loading="lazy" alt="The Library tab listing past answers"><figcaption><strong>Library</strong>Everything he wrote for you</figcaption></figure>
+  </div>
+</section>
+
+<section class="band sand" id="control">
+  <div class="wrap two">
+    <div>
+      <h2>You stay in charge.</h2>
+      <ul class="ticks">
+        <li><strong>He asks before opening a web page.</strong> Prefer more caution? One switch makes him ask before every step.</li>
+        <li><strong>Drafts, never sends.</strong> He writes the email. You decide whether it goes out.</li>
+        <li><strong>Stop at any time.</strong> One tap on the stop button and he puts the trident down.</li>
+        <li><strong>See his work.</strong> Every answer has a "See what it did" link with the steps he took.</li>
+      </ul>
+    </div>
+    <div class="mascot big" data-clip="idle"></div>
+  </div>
+</section>
+
+<section class="band" id="setup">
+  <div class="wrap">
+    <h2>Set up in about two minutes.</h2>
+    <p class="sub">The app walks you through it. Here is the short version.</p>
+    <ol class="steps">
+      <li><span>1</span><h3>Open TritonAI Harness</h3><p>On your Mac or PC, open TritonAI Harness and choose to connect a phone. It shows a code.</p></li>
+      <li><span>2</span><h3>Scan the code</h3><p>Point your iPhone at the screen. No account to create and nothing to sign in to.</p></li>
+      <li><span>3</span><h3>Ask away</h3><p>Leave the Harness open on your computer and ask from wherever you are in the building.</p></li>
+    </ol>
+    <div class="note">
+      <strong>Away from your Wi-Fi?</strong> With Tailscale on your phone and your computer, the app works from anywhere. The <a href="https://tritonai.ucsd.edu/developer-apis/harness-phone-app.html">setup guide</a> shows how.
+    </div>
+    <div class="note">
+      <strong>Just curious?</strong> The app includes a demo with sample answers, so you can look around before you connect anything.
+    </div>
+  </div>
+</section>
+
+<section class="band deep" id="privacy">
+  <div class="wrap two">
+    <div>
+      <h2>Private by design.</h2>
+      <p>Your phone talks only to your own computer. What you type, say or attach goes there and nowhere else. The app has no accounts, no analytics, no advertising and no tracking, and it collects no data.</p>
+      <p><a class="btn light" href="https://tritonai.ucsd.edu/developer-apis/harness-phone-app-privacy.html">Read the privacy statement</a></p>
+    </div>
+    <ul class="pills">
+      <li>No accounts</li><li>No analytics</li><li>No ads</li><li>No tracking</li><li>Data not collected</li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="faq">
+  <div class="wrap narrow">
+    <h2>Questions people ask.</h2>
+    <details><summary>Who is this for?</summary><p>UC San Diego staff who use TritonAI Harness on a Mac or PC. The app is a companion to the Harness and needs it to do real work.</p></details>
+    <details><summary>Does my computer have to be on?</summary><p>Yes. Your computer does the work, so it needs to be awake with TritonAI Harness open. If it is not reachable, the app holds your message and sends it when the connection is back.</p></details>
+    <details><summary>Do I have to be on the same Wi-Fi?</summary><p>By default, yes. If you install Tailscale on both your phone and your computer, you can use the app from anywhere.</p></details>
+    <details><summary>Can he send email or change my calendar?</summary><p>Not on his own. He writes drafts and asks before acting. What he is able to reach depends on what you have turned on in TritonAI Harness on your computer.</p></details>
+    <details><summary>Can I try it without a computer?</summary><p>Yes. Tap "Try a demo first" on the opening screen. The demo uses sample answers and touches none of your information.</p></details>
+    <details><summary>What does it cost?</summary><p>Nothing. The app is free.</p></details>
+    <details><summary>Is there an Android or iPad version?</summary><p>Not today. The app is made for iPhone.</p></details>
+    <details><summary>Where do I get help?</summary><p>The <a href="https://tritonai.ucsd.edu/developer-apis/harness-phone-app.html">setup and support page</a> has step-by-step instructions, or email <a href="mailto:tritonai@ucsd.edu">tritonai@ucsd.edu</a>.</p></details>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap center">
+    <div class="mascot" data-clip="wave"></div>
+    <h2>See you in the chat.</h2>
+    <div class="cta center">
+      <span class="store" role="img" aria-label="Coming soon to the App Store">
+        <span><small>Coming soon to the</small>App Store</span>
+      </span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Brett Pollak</span>
+    <nav aria-label="Footer">
+      <a href="https://tritonai.ucsd.edu/developer-apis/harness-phone-app.html">Support</a>
+      <a href="https://tritonai.ucsd.edu/developer-apis/harness-phone-app-privacy.html">Privacy</a>
+      <a href="https://tritonai.ucsd.edu/">TritonAI</a>
+    </nav>
+  </div>
+  <p class="wrap legal">Apple, iPhone and App Store are trademarks of Apple Inc. Tailscale is a trademark of Tailscale Inc.</p>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
