@@ -27,22 +27,16 @@
   }
   document.querySelectorAll('.mascot[data-clip]').forEach(function (el) { show(el, el.dataset.clip); });
 
-  // Headline that cycles through what the assistant does.
-  var rotor = document.getElementById('rotor');
-  var phrases = ['prepares you for meetings', 'sorts out your inbox', 'finds the right file', 'drafts the follow-up', 'briefs you every morning'];
-  if (rotor && !calm) {
-    var at = 0;
-    setInterval(function () {
-      rotor.classList.add('out');
-      setTimeout(function () { at = (at + 1) % phrases.length; rotor.textContent = phrases[at]; rotor.classList.remove('out'); }, 360);
-    }, 2800);
-  }
-
-  // The phone in the hero cycles through real screens of the app.
-  var heroShots = document.querySelectorAll('#heroShots img');
-  if (heroShots.length > 1 && !calm) {
-    var shown = 0;
-    setInterval(function () { heroShots[shown].classList.remove('on'); shown = (shown + 1) % heroShots.length; heroShots[shown].classList.add('on'); }, 4200);
+  // The phone in the hero plays a screen recording of the app. It plays only while it is on screen.
+  var heroVideo = document.getElementById('heroVideo');
+  if (heroVideo) {
+    if (calm) { heroVideo.controls = true; }
+    else if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) { var p = heroVideo.play(); if (p && p.catch) p.catch(function () { heroVideo.controls = true; }); }
+        else { heroVideo.pause(); }
+      }, { threshold: 0.25 }).observe(heroVideo);
+    } else { heroVideo.autoplay = true; heroVideo.play(); }
   }
 
   // (Earlier interactive phone; inactive when its markup is absent.)
