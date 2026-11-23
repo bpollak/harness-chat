@@ -66,7 +66,7 @@
       say('me', chip.textContent);
       var chain = Promise.resolve();
       answer.steps.forEach(function (step) { chain = chain.then(function () { mood(step[0], step[1]); return wait(1500); }); });
-      chain.then(function () { say('it', answer.html + '<em>Sample answer.</em>'); mood('celebrate', 'Done'); return wait(2600); })
+      chain.then(function () { say('it', answer.html); mood('celebrate', 'Done'); return wait(2600); })
         .then(function () { mood('ready', 'Ready when you are'); chips.forEach(function (c) { c.disabled = false; }); });
     });
   });
