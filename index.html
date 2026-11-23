@@ -20,15 +20,17 @@
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="nav">
-  <a class="brand" href="#top"><img src="assets/icon-512.png" alt="" width="32" height="32"><span>TritonAI Harness Chat</span></a>
-  <nav aria-label="Sections">
-    <a href="#examples">Examples</a>
-    <a href="#how">How it works</a>
-    <a href="#control">Control</a>
-    <a href="#connects">Connections</a>
-    <a href="#setup">Setup</a>
-    <a href="#faq">FAQ</a>
-  </nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="#top"><img src="assets/icon-512.png" alt="" width="32" height="32"><span>TritonAI Harness Chat</span></a>
+    <nav aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#examples">Examples</a>
+      <a href="#control">Control</a>
+      <a href="#connects">Connections</a>
+      <a href="#setup">Setup</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
 </header>
 
 <main id="main">
@@ -38,7 +40,7 @@
     <div class="hero-copy">
       <p class="eyebrow">For UC San Diego staff · iPhone</p>
       <h1>An assistant that <span class="rotor" id="rotor" aria-live="off">prepares you for meetings</span></h1>
-      <p class="lede">TritonAI Harness Chat puts the assistant on your work computer in your pocket. It works from your own calendar, mail and files, does the legwork, and brings back something you can use.</p>
+      <p class="lede">TritonAI Harness Chat is the phone companion to TritonAI Harness. Ask from wherever you are, and the Harness on your work computer does the legwork with your own calendar, mail and files.</p>
       <div class="cta">
         <span class="store" role="img" aria-label="Coming soon to the App Store"><small>Coming soon to the</small>App Store</span>
         <a class="btn ghost" href="https://tritonai.ucsd.edu/developer-apis/harness-phone-app.html">Setup and support</a>
@@ -46,70 +48,24 @@
       <p class="fine">Free. Requires iOS 18 or later and TritonAI Harness on your Mac or PC.</p>
     </div>
 
-    <div class="phone-stage">
-      <div class="phone" aria-label="A conversation you can try">
-        <div class="phone-top">
-          <div class="mascot sm" data-clip="ready" id="demoMascot"></div>
-          <div class="who"><span>TritonAI</span><strong id="demoStatus" aria-live="polite">Ready when you are</strong></div>
+    <div class="device-stage">
+      <div class="device" role="img" aria-label="The app on an iPhone, showing answers built from the person's own work files">
+        <div class="device-screen" id="heroShots">
+          <img src="assets/shot-chat.jpg" alt="" class="on" width="660" height="1435">
+          <img src="assets/shot-notes.jpg" alt="" width="660" height="1435">
+          <img src="assets/shot-prep.jpg" alt="" width="660" height="1435">
+          <img src="assets/shot-library.jpg" alt="" width="660" height="1435">
         </div>
-        <div class="chat" id="demoChat">
-          <p class="hint" id="demoHint">Choose a request to see how it works.</p>
-        </div>
-        <div class="chips" id="demoChips">
-          <button type="button" data-demo="prep">Prepare me for my 2:00 budget review</button>
-          <button type="button" data-demo="inbox">What needs a reply from me today?</button>
-          <button type="button" data-demo="file">Find the staffing spreadsheet and tell me what changed</button>
-        </div>
-        <div class="composer" aria-hidden="true"><span>+</span><em>Ask anything</em><b>↑</b></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="band tight">
-  <div class="wrap compare">
-    <div>
-      <p class="kicker">TritonGPT</p>
-      <h3>Answers questions about UC San Diego.</h3>
-      <p>Policies, procedures and campus information, the same for everyone who asks.</p>
-    </div>
-    <div class="vs" aria-hidden="true">and</div>
-    <div class="mine">
-      <p class="kicker">TritonAI Harness Chat</p>
-      <h3>Does work with your own material.</h3>
-      <p>Your calendar, your inbox, your files and your projects. It gathers, summarizes and drafts, and the result is specific to you.</p>
-    </div>
-  </div>
-</section>
-
-<section class="band" id="examples">
+<section class="band tint-blue" id="how">
   <div class="wrap">
-    <p class="kicker">What it does</p>
-    <h2>Hand off the work around your work.</h2>
-    <p class="sub">Each request below draws on your own accounts, as connected in TritonAI Harness on your computer. Select one to see what happens.</p>
-
-    <div class="scenes">
-      <div class="scene-list" role="tablist" aria-label="Examples">
-        <button role="tab" aria-selected="true" data-scene="prep"><strong>Meeting preparation</strong><span>A brief before you walk in</span></button>
-        <button role="tab" aria-selected="false" data-scene="inbox"><strong>Inbox triage</strong><span>What needs you, with replies drafted</span></button>
-        <button role="tab" aria-selected="false" data-scene="file"><strong>Find and summarize</strong><span>The right file and what changed</span></button>
-        <button role="tab" aria-selected="false" data-scene="follow"><strong>Meeting follow-up</strong><span>Action items and draft messages</span></button>
-        <button role="tab" aria-selected="false" data-scene="brief"><strong>Morning brief</strong><span>Scheduled, waiting when you wake</span></button>
-      </div>
-      <div class="stage" id="stage" role="tabpanel" aria-live="polite">
-        <div class="ask" id="stAsk"></div>
-        <div class="sources" id="stSources"></div>
-        <div class="result" id="stResult"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="band alt" id="how">
-  <div class="wrap">
-    <p class="kicker">How it works</p>
-    <h2>Your phone asks. Your computer does the work.</h2>
-    <p class="sub">The app is a remote for TritonAI Harness on your own Mac or PC. Requests travel from your phone to that computer and nowhere else.</p>
+    <p class="kicker">Works with TritonAI Harness</p>
+    <h2>Your phone asks. The Harness on your computer does the work.</h2>
+    <p class="sub">TritonAI Harness is where the work happens: your signed-in accounts, your plugins and your skills, on your own Mac or PC. The phone app is how you reach it when you are away from your desk. Everything you have set up in the Harness is available from your phone.</p>
     <div class="diagram">
       <svg viewBox="0 0 960 380" role="img" aria-label="Your phone sends a request to TritonAI Harness on your computer, which works with your calendar, mail, files and other connected tools, then sends the answer back to your phone.">
         <defs>
@@ -150,14 +106,37 @@
       </svg>
     </div>
     <div class="three">
-      <div><h3>It uses what you already have</h3><p>The accounts and plugins you signed in to in TritonAI Harness on your computer. Nothing new to set up on the phone.</p></div>
+      <div><h3>One setup, two places to work</h3><p>The plugins and skills you use in the Harness at your desk are the same ones the phone reaches. There is nothing new to configure on the phone.</p></div>
       <div><h3>The answer comes back to one chat</h3><p>No projects, threads or models to choose. Ask, follow up, or start a new topic.</p></div>
-      <div><h3>It keeps working while you are away</h3><p>Send a request, put the phone down, and read the result when you are ready.</p></div>
+      <div><h3>Start on one, finish on the other</h3><p>Requests from your phone appear in the Harness on your computer, and files the Harness saves open on your phone.</p></div>
     </div>
   </div>
 </section>
 
-<section class="band" id="status">
+<section class="band" id="examples">
+  <div class="wrap">
+    <p class="kicker">What it does</p>
+    <h2>Hand off the work around your work.</h2>
+    <p class="sub">Each request below draws on your own accounts and files, through TritonAI Harness on your computer. Select one to see what happens.</p>
+
+    <div class="scenes">
+      <div class="scene-list" role="tablist" aria-label="Examples">
+        <button role="tab" aria-selected="true" data-scene="prep"><strong>Meeting preparation</strong><span>A brief before you walk in</span></button>
+        <button role="tab" aria-selected="false" data-scene="inbox"><strong>Inbox triage</strong><span>What needs you, with replies drafted</span></button>
+        <button role="tab" aria-selected="false" data-scene="file"><strong>Find and summarize</strong><span>The right file and what changed</span></button>
+        <button role="tab" aria-selected="false" data-scene="follow"><strong>Meeting follow-up</strong><span>Action items and draft messages</span></button>
+        <button role="tab" aria-selected="false" data-scene="brief"><strong>Morning brief</strong><span>Scheduled, waiting when you wake</span></button>
+      </div>
+      <div class="stage" id="stage" role="tabpanel" aria-live="polite">
+        <div class="ask" id="stAsk"></div>
+        <div class="sources" id="stSources"></div>
+        <div class="result" id="stResult"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band tint-gold" id="status">
   <div class="wrap two">
     <div>
       <p class="kicker">Always clear</p>
@@ -207,26 +186,26 @@
     <h2>It works with the tools your office already uses.</h2>
     <p class="sub">Each connection is a plugin in TritonAI Harness. Sign in once on your computer and it is available from your phone.</p>
     <div class="plugs">
-      <article><h3>Microsoft 365</h3><p>Outlook mail and calendar, Teams, OneDrive and SharePoint files.</p></article>
-      <article><h3>Google Workspace</h3><p>Drive, Docs and Sheets.</p></article>
-      <article><h3>Tableau</h3><p>The workbooks and dashboards you have access to.</p></article>
-      <article><h3>Kuali Build</h3><p>Campus forms and the apps built on them.</p></article>
-      <article><h3>Jira</h3><p>Your tickets and where they stand.</p></article>
-      <article><h3>Lucid</h3><p>Your diagrams and boards.</p></article>
-      <article><h3>n8n</h3><p>Your automated workflows.</p></article>
-      <article><h3>Campus knowledge</h3><p>Blink and Services &amp; Support, for the policy behind a task.</p></article>
+      <article><span class="tile c-blue" aria-hidden="true">M</span><h3>Microsoft 365</h3><p>Outlook mail and calendar, Teams, OneDrive and SharePoint files.</p></article>
+      <article><span class="tile c-green" aria-hidden="true">G</span><h3>Google Workspace</h3><p>Drive, Docs and Sheets.</p></article>
+      <article><span class="tile c-orange" aria-hidden="true">T</span><h3>Tableau</h3><p>The workbooks and dashboards you have access to.</p></article>
+      <article><span class="tile c-teal" aria-hidden="true">K</span><h3>Kuali Build</h3><p>Campus forms and the apps built on them.</p></article>
+      <article><span class="tile c-indigo" aria-hidden="true">J</span><h3>Jira</h3><p>Your tickets and where they stand.</p></article>
+      <article><span class="tile c-magenta" aria-hidden="true">L</span><h3>Lucid</h3><p>Your diagrams and boards.</p></article>
+      <article><span class="tile c-red" aria-hidden="true">n</span><h3>n8n</h3><p>Your automated workflows.</p></article>
+      <article><span class="tile c-navy" aria-hidden="true">UC</span><h3>Campus knowledge</h3><p>Blink and Services &amp; Support, for the policy behind a task.</p></article>
     </div>
     <p class="fine dark">Availability depends on which plugins are switched on and signed in on your own computer.</p>
   </div>
 </section>
 
-<section class="band alt" id="tour">
+<section class="band tint-blue" id="tour">
   <div class="wrap">
     <p class="kicker">The app</p>
     <h2>Four tabs. Most days you need one.</h2>
   </div>
   <div class="shots" tabindex="0" aria-label="Screenshots of the app. Scroll sideways for more.">
-    <figure><img src="assets/shot-chat.jpg" width="540" height="1174" loading="lazy" alt="The chat, with the assistant's status at the top and a draft email"><figcaption><strong>Chat</strong>One running conversation</figcaption></figure>
+    <figure><img src="assets/shot-chat.jpg" width="540" height="1174" loading="lazy" alt="The chat, comparing two staffing plan files and listing what changed"><figcaption><strong>Chat</strong>One running conversation</figcaption></figure>
     <figure><img src="assets/shot-ideas.jpg" width="540" height="1174" loading="lazy" alt="The Ideas tab with suggested requests"><figcaption><strong>Ideas</strong>Suggested requests, ready to send</figcaption></figure>
     <figure><img src="assets/shot-scheduled.jpg" width="540" height="1174" loading="lazy" alt="The Scheduled tab with a weekday request"><figcaption><strong>Scheduled</strong>Requests that run on their own</figcaption></figure>
     <figure><img src="assets/shot-library.jpg" width="540" height="1174" loading="lazy" alt="The Library tab listing past answers"><figcaption><strong>Library</strong>Everything it wrote for you</figcaption></figure>
@@ -246,7 +225,7 @@
   </div>
 </section>
 
-<section class="band alt" id="privacy">
+<section class="band tint-teal" id="privacy">
   <div class="wrap two">
     <div>
       <p class="kicker">Privacy</p>
@@ -264,7 +243,7 @@
   <div class="wrap narrow">
     <p class="kicker">FAQ</p>
     <h2>Common questions.</h2>
-    <details><summary>How is this different from TritonGPT?</summary><p>TritonGPT answers questions about UC San Diego. TritonAI Harness Chat works with your own calendar, mail, files and connected tools, and carries out tasks for you on your own computer.</p></details>
+    <details><summary>How does it relate to TritonAI Harness?</summary><p>It is the Harness's companion on your phone. TritonAI Harness runs on your Mac or PC and does the work with your accounts, plugins and skills. The app lets you ask, approve and read results when you are away from that computer.</p></details>
     <details><summary>Who is it for?</summary><p>UC San Diego staff who use TritonAI Harness on a Mac or PC. The app is a companion to the Harness and needs it to do real work.</p></details>
     <details><summary>Does my computer have to be on?</summary><p>Yes. Your computer does the work, so it needs to be awake with TritonAI Harness open. If it is not reachable, the app holds your message and sends it when the connection is back.</p></details>
     <details><summary>Do I have to be on the same Wi-Fi?</summary><p>By default, yes. With Tailscale on both your phone and your computer, you can use the app from anywhere.</p></details>

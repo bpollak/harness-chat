@@ -38,7 +38,14 @@
     }, 2800);
   }
 
-  // The sample conversation in the phone.
+  // The phone in the hero cycles through real screens of the app.
+  var heroShots = document.querySelectorAll('#heroShots img');
+  if (heroShots.length > 1 && !calm) {
+    var shown = 0;
+    setInterval(function () { heroShots[shown].classList.remove('on'); shown = (shown + 1) % heroShots.length; heroShots[shown].classList.add('on'); }, 4200);
+  }
+
+  // (Earlier interactive phone; inactive when its markup is absent.)
   var answers = {
     prep: { steps: [['working', 'Reading your calendar'], ['working', 'Reading the email thread'], ['making', 'Writing your brief']],
       html: '<p><strong>Budget review, 2:00 to 2:45</strong>, Conference Room B, with four people from the budget office.</p><ul><li>They asked last Thursday for the revised travel estimate. You have not replied.</li><li>The draft you shared shows travel 12% over plan.</li><li>Open question from the last meeting: the equipment refresh date.</li></ul><p>I attached the spreadsheet and the thread.</p>' },
@@ -58,7 +65,7 @@
     el.className = cls; el.innerHTML = html;
     chat.appendChild(el); chat.scrollTop = chat.scrollHeight;
   }
-  function mood(clip, words) { if (mascot.dataset.clip !== clip) show(mascot, clip); status.textContent = words; }
+  function mood(clip, words) { if (!mascot) return; if (mascot.dataset.clip !== clip) show(mascot, clip); status.textContent = words; }
   chips.forEach(function (chip) {
     chip.addEventListener('click', function () {
       chips.forEach(function (c) { c.disabled = true; });
