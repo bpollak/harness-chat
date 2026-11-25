@@ -47,6 +47,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .shots:focus-visib
 .lede { font-size: 1.2rem; color: var(--muted); max-width: 33em; }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 28px 0 14px; }
 .store { display: inline-flex; flex-direction: column; background: var(--ink); color: #fff; padding: 9px 20px; border-radius: 10px; font-size: 1.15rem; font-weight: 600; line-height: 1.15; }
+a.store { text-decoration: none; }
+a.store:hover, a.store:focus-visible { opacity: .88; }
 .store small { font-size: .66rem; font-weight: 500; letter-spacing: .02em; opacity: .8; }
 .btn { display: inline-block; text-decoration: none; font-weight: 600; font-size: 1rem; padding: 13px 20px; border-radius: 10px; }
 .btn.ghost { color: var(--ink); border: 1px solid #c5ccd5; background: #fff; }
